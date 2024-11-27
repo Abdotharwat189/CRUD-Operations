@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/bootstrap.min.css">
+  <link rel="stylesheet" href="Css/index-Minify.css">
+  <link rel="stylesheet" href="Css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <title>JS</title>
+</head>
+
+<body class=" bg-warning-subtle pt-5 ">
+
+
+  <div class="container  my-5">
+
+    <div class="Header text-center">
+      <h1>Bookmarker</h1>
+    </div>
+
+
+    <div class="data container my-5 ">
+
+      <div class="gradient-text fs-3 fw-bolder text-center">
+        <span><i class="fa-solid fa-bookmark"></i></span>
+        <span> Bookmark your favorite sites </span>
+        <span><i class="fa-solid fa-bookmark"></i></span>
+
+      </div>
+
+      <div class="fw-bold">
+        <div class="mb-3 my-5 ">
+          <label for="exampleFormControlInput1" class="form-label"><i class="fa-solid fa-book-bookmark"></i><span> Site
+              Name</span></label>
+          <input oninput="dateValidation(this)" type="text"
+            class="d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border form-control rounded-2 w-100"
+            placeholder="Bookmark Name" id="Bookmark">
+
+            <div class="alert alert-danger my-1 py-1 d-none" role="alert">
+              Oops! Something went wrong. Please continue. 
+            </div>
+            
+        </div>
+
+
+        <div class="mb-3  ">
+          <label for="exampleFormControlInput1" class="form-label"><i class="fa-solid fa-link"></i><span> Site
+              URL</span></label>
+          <input oninput="dateValidation(this)" type="text"
+            class="d-inline-flex focus-ring focus-ring-warning py-1 px-2 form-control  text-decoration-none border rounded-2 w-100"
+            placeholder=" Website URl" id="Site">
+
+
+            <div class="alert alert-danger my-1 py-1 d-none" role="alert">
+              we're sorry you must make sure about this url
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  onclick="addData()">Submit</button>
+        </div>
+        
+      </div>
+
+
+
+
+
+
+    </div>
+    <table class="table text-center ">
+      <thead>
+        <tr class=" w-100 ">
+          <th scope="col">index</th>
+          <th scope="col">Website Name</th>
+          <th scope="col">Visit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="allData">
+
+      </tbody>
+
+
+    </table>
+  </div>
+
+
+
+  <script src="Js/index.js"></script>
+
+</body>
+
+</html>

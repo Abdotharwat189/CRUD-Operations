@@ -1,0 +1,42 @@
+.Header{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+  }
+.Header::before{
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 20%;
+    background-color: red;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%);
+    z-index: -1;
+    background-color: #fdbf57;
+    transition: all 1s;
+
+}
+
+.Header:hover::before {
+    height: 50%;
+}
+
+
+.gradient-text {
+    background: linear-gradient(to right, green, yellow); 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+
+
+
+.data{
+    border-top:dotted;
+    border-bottom:dotted;
+    padding: 30px;
+}
+
